@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="./src/style/style.css" />
-    <script defer src="./src/app/index.js"></script>
+    <script defer type="module" src="./src/app/index.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -40,12 +40,14 @@
       <button class="rock"><div class="rockImg"></div></button>
       <button class="paper"><div class="paperImg"></div></button>
       <button class="scissors"><div class="scissorImg"></div></button>
+    </div>
+    <div class="nextOrRet">
       <h2 class="win dn">you win</h2>
       <h2 class="lose dn">you lose</h2>
       <h2 class="nothing dn">nothing</h2>
-      <div class="">
-          <button class="restart dn"><p>restart</p></button>
-          <button class="next dn"><p>next raund</p></button>
+      <div class="buttons_next">
+        <button class="restart dn"><p>restart</p></button>
+        <button class="next dn"><p>next raund</p></button>
       </div>
     </div>
   </body>
