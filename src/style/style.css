@@ -1,0 +1,223 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+body {
+  background: #9dcaff;
+}
+
+.counter {
+  display: flex;
+  width: max-content;
+  margin: 0 auto;
+  margin-top: 100px;
+  gap: 256px;
+}
+
+.ai_count,
+.you_count {
+  color: #fff;
+  text-align: center;
+  text-shadow: 4px 4px 0px #000;
+  -webkit-text-stroke-width: 2;
+  -webkit-text-stroke-color: #000;
+  font-family: "Seymour One";
+  font-size: 160px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.ai_txt,
+.you_txt {
+  color: #fff;
+  text-align: center;
+  text-shadow: 4px 4px 0px #000;
+  -webkit-text-stroke-width: 2;
+  -webkit-text-stroke-color: #000;
+  font-family: "Seymour One";
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -4.8px;
+}
+
+.hands {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  top: 50px;
+  margin: 0 auto;
+  height: max-content;
+  width: 100vw;
+}
+
+.ai_hand {
+  position: absolute;
+  top: 50px;
+  left: 0;
+  width: 700px;
+  height: 1200px;
+  transform: rotate(35deg);
+}
+.you_hand {
+  position: absolute;
+  top: 50px;
+  right: -0;
+  width: 500px;
+  transform: rotate(-35deg);
+  transform: scale(400deg);
+}
+
+.buttons {
+  display: flex;
+  position: absolute;
+  width: max-content;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 61px;
+  gap: 31px;
+  text-align: center;
+  /* display: none; */
+}
+
+.buttons .rock,
+.paper,
+.scissors {
+  text-align: center;
+  transition: 0.5s;
+  background: none;
+  border: none;
+  cursor: pointer;
+  width: max-content;
+  border-radius: 50%;
+  height: max-content;
+}
+
+.rockImg {
+  transition: 0.3s;
+  width: 222px;
+  height: 222px;
+  background-image: url("../img/buttonRock.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.paperImg {
+  transition: 0.3s;
+  width: 222px;
+  height: 222px;
+  background-image: url("../img/buttonPaper.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.scissorImg {
+  transition: 0.3s;
+  width: 222px;
+  height: 222px;
+  background-image: url("../img/buttonScissors.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.buttons .scissorImg:hover {
+  transform: scale(1.2);
+  background-image: url("../img/buttonScissorsH.png");
+  background-size: contain;
+}
+.buttons .rockImg:hover {
+  transform: scale(1.2);
+  background-image: url("../img/buttonRockH.png");
+  background-size: contain;
+}
+.buttons .paperImg:hover {
+  transform: scale(1.2);
+  background-image: url("../img/buttonPaperh.png");
+  background-size: contain;
+}
+
+.buttons h2 {
+  color: #fff;
+  text-align: center;
+  text-shadow: 4px 4px 0px #000;
+  -webkit-text-stroke-width: 2;
+  -webkit-text-stroke-color: #000;
+  font-family: "Seymour One";
+  font-size: 96px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -9.6px;
+}
+
+.dn {
+  display: none;
+}
+
+.next {
+  transition: 1s;
+  border: 2px solid #000;
+  background: #fff;
+  width: 204px;
+  height: 63px;
+  flex-shrink: 0;
+  box-shadow: 4px 4px 0px 0px #000, 4px -7px 0px 0px #c2c2c2 inset;
+}
+
+.restart {
+  transition: 1s;
+  border: 2px solid #000;
+  background: #fff;
+  box-shadow: 4px 4px 0px 0px #000, 4px -7px 0px 0px #c2c2c2 inset;
+  width: 145px;
+  height: 63px;
+  flex-shrink: 0;
+}
+
+.restart p {
+  transition: 1s;
+  color: #000;
+  font-family: Shrikhand;
+  font-size: 34px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.restart p:hover {
+  transform: rotate(-4.139deg);
+}
+
+.next p {
+  transition: 1s;
+  color: #000;
+  font-family: Shrikhand;
+  font-size: 34px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.next p:hover {
+  transform: rotate(-1.934deg); 
+}
+
+.fdc {
+  display: flex;
+  flex-direction: column;
+
+}
+
+.buttons div {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+}
